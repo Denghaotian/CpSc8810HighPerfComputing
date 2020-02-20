@@ -29,7 +29,7 @@ void* ThreadEntry(void* id)   //aceess threads
     return NULL;
 }
 
-int main (int argc, char** argc)
+int main (int argc, char** argv)
 {
     pthread_t threads[NUMTHREADS]; // declare threads ID
 
