@@ -1,0 +1,43 @@
+-----------start--------------------
+number of threads:3
+create_num_threads:0
+create_num_threads:1
+ThreadEntry_num:0
+create_num_threads:2
+ThreadEntry_num:1
+mutex_state_mainfunction:0
+state_before_cond_waitfunction cond:0 mutex:0
+ThreadEntry_num:2
+sleep:0
+sleep:0
+sleep:0
+sleep:1
+sleep:1
+sleep:1
+sleep:2
+sleep:2
+sleep:2
+sleep:3
+sleep:3
+sleep:3
+sleep:4
+mutex_state_entry_before_lock:0
+mutex_state_entry_after_lock:0
+done:1
+after_cond_signal,cond:133 mutex:1
+after_mutex_unlock,cond:0 mutex:6299840
+sleep:4
+state_after_cond_wait_function:cond:0 mutex:0
+state_before_cond_waitfunction cond:0 mutex:1
+mutex_state_entry_before_lock:0
+sleep:4
+mutex_state_entry_before_lock:0
+mutex_state_entry_after_lock:0
+done:2
+after_cond_signal,cond:133 mutex:1
+after_mutex_unlock,cond:0 mutex:6299840
+mutex_state_entry_after_lock:128
+done:3
+after_cond_signal,cond:1 mutex:0
+after_mutex_unlock,cond:0 mutex:6299840
+state_after_cond_wait_function:cond:0 mutex:0
