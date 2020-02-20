@@ -31,7 +31,7 @@ void* ThreadEntry(void* id)   //aceess threads
     printf("after_cond_signal,cond:%d mutex:%d\n",cond,mutex);
     pthread_mutex_unlock(&mutex);  //unlock mutex
 
-    printf("after_mutex_unlock,cond:%d mutex:%d\n",cond,mutex);
+    printf("after_mutex_unlock,cond:%d mutex:%d  end of thread:%ld\n",cond,mutex,myid);
     return NULL;
 }
 
@@ -47,7 +47,7 @@ int main (int argc, char** argv)
     { 
       printf("create_num_threads:%d\n",t); 
       pthread_create( &threads[t],NULL,ThreadEntry,(void*)(long)t );
-      printf("End thread :%d\n",t);
+      printf("End thread of create threads :%d\n",t);
     }
     pthread_mutex_lock( &mutex );
     printf("mutex_state_mainfunction:%d\n",mutex);     

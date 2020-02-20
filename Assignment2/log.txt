@@ -1,13 +1,13 @@
 -----------start--------------------
 number of threads:3
 create_num_threads:0
-End thread :0
+End thread of create threads :0
 create_num_threads:1
 ThreadEntry_num:0
-End thread :1
+End thread of create threads :1
 create_num_threads:2
 ThreadEntry_num:1
-End thread :2
+End thread of create threads :2
 mutex_state_mainfunction:0
 state_before_cond_waitfunction cond:0 mutex:0
 ThreadEntry_num:2
@@ -28,19 +28,21 @@ mutex_state_entry_before_lock:0
 mutex_state_entry_after_lock:0
 done:1
 sleep:4
-after_cond_signal,cond:133 mutex:1
 mutex_state_entry_before_lock:0
-after_mutex_unlock,cond:0 mutex:6299840
-mutex_state_entry_after_lock:0
+after_cond_signal,cond:133 mutex:1
+after_mutex_unlock,cond:2 mutex:2  end of thread:22618158126570
+state_after_cond_wait_function:cond:0 mutex:0
+state_before_cond_waitfunction cond:0 mutex:1
+mutex_state_entry_after_lock:128
 done:2
-after_cond_signal,cond:1 mutex:0
-after_mutex_unlock,cond:0 mutex:6299840
-state_after_cond_wait_function:cond:128 mutex:0
+after_cond_signal,cond:133 mutex:1
+after_mutex_unlock,cond:1 mutex:2  end of thread:22618158126570
+state_after_cond_wait_function:cond:0 mutex:0
 state_before_cond_waitfunction cond:0 mutex:2
 sleep:4
 mutex_state_entry_before_lock:0
 mutex_state_entry_after_lock:0
 done:3
 after_cond_signal,cond:133 mutex:1
-after_mutex_unlock,cond:0 mutex:6299840
+after_mutex_unlock,cond:0 mutex:2  end of thread:34
 state_after_cond_wait_function:cond:0 mutex:0
