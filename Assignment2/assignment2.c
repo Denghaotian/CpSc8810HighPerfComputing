@@ -47,6 +47,7 @@ int main (int argc, char** argv)
     { 
       printf("create_num_threads:%d\n",t); 
       pthread_create( &threads[t],NULL,ThreadEntry,(void*)(long)t );
+      printf("End thread :%d\n",t);
     }
     pthread_mutex_lock( &mutex );
     printf("mutex_state_mainfunction:%d\n",mutex);     
